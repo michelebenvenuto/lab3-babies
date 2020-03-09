@@ -1,0 +1,2 @@
+export const BABY_ADDED = 'BABIE_ADDED';
+export const BABY_SELECTED = 'BABIE_SELECTED'
