@@ -9,7 +9,7 @@ export const addBaby = (id, name, lastName) => ({
     }
 });
 
-export const selectBaby = index =>({
+export const selectBaby = id =>({
         type : types.BABY_SELECTED,
-        payload: index
+        payload: id
 });
