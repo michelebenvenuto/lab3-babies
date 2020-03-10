@@ -47,4 +47,4 @@ export const getBabie = (state, id) => state.byId[id];
 export const getBabies = state => state.byOrder.map(
     id => getBabie (state, id)
 )
-export const getSelectedBabie = state => state.selectBaby
+export const getSelectedBaby = state => state.selectBaby

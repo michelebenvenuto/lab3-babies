@@ -1,0 +1,1 @@
+export const EVENT_ADDED = 'EVENT_ADDED';
