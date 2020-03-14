@@ -3,8 +3,9 @@ import {Provider} from 'react-redux';
 
 import {configureStore} from '../../store';
 import Babies from '../babies';
-import AddEventToBaby from '../AddEventToBaby'
+import AddEventToBaby from '../AddEventToBaby';
 import AddBabyForm from '../AddBabyForm';
+import EventsOfBaby from '../EventsOfBaby';
 const store = configureStore();
 
 const App = () =>(
@@ -12,6 +13,7 @@ const App = () =>(
     <Babies/>
     <AddBabyForm/>
     <AddEventToBaby/>
+    <EventsOfBaby/>
   </Provider>
 );
 

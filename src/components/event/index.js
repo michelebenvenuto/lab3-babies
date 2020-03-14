@@ -8,7 +8,7 @@ const Event =({
     eventInfo
 }) => (
     <div>
-        {eventInfo.type + '\n' + eventInfo.info + '\n' + eventInfo.date}
+        {eventInfo.tipo + '/n' + eventInfo.info + '/n' + eventInfo.date}
     </div>
 )
 
