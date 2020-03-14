@@ -1,5 +1,4 @@
-import { combineReducers } from 'redux';
-import omit from 'lodash'
+
 
 import * as types from '../types/events'
 
@@ -11,7 +10,12 @@ const events = (state = {}, action) => {
                 [action.payload.id] : action.payload
             };
         }
+        default:{
+            return state;
+        }
     }
 };
 
 export default events;
+
+export const getEvent = (state, id) => state[id];
