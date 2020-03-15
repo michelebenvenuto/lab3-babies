@@ -1,6 +1,7 @@
 import {v4 as uuidv4} from 'uuid';
 import React, {useState, Fragment} from 'react';
 import { connect } from 'react-redux';
+import {Link} from 'react-router-dom'
 
 import * as actions from '../../actions/babies'
 const AddBabyForm = ({onSubmit}) => {
@@ -20,11 +21,14 @@ const AddBabyForm = ({onSubmit}) => {
                 value = {lastName}
                 onChange = {e => changeLastName(e.target.value)}
             />
-            <button type = 'submit' onClick = {
-                () => onSubmit(name, lastName)
-            }>
-                {'Agregar'}
-            </button>
+            <Link to='/babies'>
+                <button type = 'submit' onClick = {
+                    () => onSubmit(name, lastName)
+                }>
+                    {'Agregar'}
+                </button>
+            </Link>
+            
         </Fragment>
     );
 }
