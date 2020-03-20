@@ -1,9 +1,18 @@
 .add-event-wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-input{
+.add-baby{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.type-input{
+    align-self: start;
+    width: 250px;
+}
+.info-input{
+    height: 250px;
+    align-items: center;
 }

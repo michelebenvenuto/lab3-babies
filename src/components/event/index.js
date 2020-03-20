@@ -32,7 +32,7 @@ export default connect(
     }),
     (dispatch , {id}) => ({
         onDelete(currBaby){ 
-            dispatch(actions.deleteEventFromBaby(currBaby), id)
+            dispatch(actions.deleteEventFromBaby(currBaby, id))
         }
     })
 )(Event)

@@ -28,7 +28,7 @@ const Babies = ({ allBabies }) => (
       }
 
       <Link to = '/'>
-        <button>
+        <button className='add-baby'>
           {'Nuevo Bebe'}
         </button>
       </Link>

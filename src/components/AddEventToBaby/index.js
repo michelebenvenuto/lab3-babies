@@ -13,19 +13,26 @@ const AddEventToBaby = ({onSubmit, currSelectedBaby}) => {
     const [info, changeInfo] = useState('')
     return(
         <div className = 'add-event-wrapper'>
+            <h1>
+                {
+                    currSelectedBaby=== null ? ("Seleccione un bebe para agregarle un evento"):('Agregar evento al bebe seleccionado')
+                }
+            </h1>
             <input
+                className = 'type-input'
                 type = 'text'
-                placeholder ='type'
+                placeholder ='Tipo'
                 value = {type}
                 onChange = {e => changeType(e.target.value)}
             />
             <input
+                className = 'info-input'
                 type = 'text'
-                placeholder ='info'
+                placeholder ='Observaciones'
                 value = {info}
                 onChange = {e => changeInfo(e.target.value)}
             />
-            <button type = 'submit' onClick = {
+            <button className='add-event' type = 'submit' onClick = {
                 () => onSubmit(type, info, currSelectedBaby)
             }>
                 {'Agregar'}
